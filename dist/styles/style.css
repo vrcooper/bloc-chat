@@ -1,15 +1,13 @@
-.jumbotron #home-title {
-	text-align: center;
-}
 
 .sidebar {
 	clear: both;
 	background-color: #ADD8E6;
 	height: 1000px;
+    
 }
 
 .sidebar .header {
-	margin: auto;
+/*    margin: auto;*/
 	padding-top: 15px;
 }
 
@@ -19,10 +17,10 @@
 }
 
 .sidebar .rooms-list {
-	margin: auto;
+    margin: auto;
 	padding-top: 15px;
 }
 
 .sidebar .rooms-list .chatrooms {
-	text-align: center;
+	text-align: center;*/
 }
