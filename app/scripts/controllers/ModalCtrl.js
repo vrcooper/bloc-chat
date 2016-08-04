@@ -1,5 +1,19 @@
 (function() {
     function ModalCtrl($uibModal) {
+        this.openModal = function() {
+            this.modalInstance = $uibModal.open({
+                animation: $scope.animationsEnabled,
+                templateUrl: 'modal.html',
+                controller: 'ModalCtrl.js',
+                size: size,
+                resolve: {
+                    items: function() {
+                        return $scope.items;
+                    }
+                }
+            });
+        },
+            
         this.create = function(rooms) {
             return rooms.$add(room);
         },
