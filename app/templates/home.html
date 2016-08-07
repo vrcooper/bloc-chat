@@ -1,15 +1,19 @@
 <section>
 <div class="col-md-3 sidebar">
     <div class="header">
-    <p class="sidebar header title">Bloc Chat</p>
+    <p class="title">Bloc Chat</p>
+        <div class="new-chat-room">
+            <button class="btn btn-primary" ng-click="home.openModal()"><strong>+ </strong>Create New Chat Room</button>
+        </div>
+        <section class="rooms-list">
+    <div class="chatrooms">
+        <p ng-repeat="room in chatRooms">{{room.title}}</p>
+        </div>
+    </section>
     </div>
     </div>
 </section>
 
 <section>
-    <section class="rooms-list">
-    <div ng-repeat="room in home.chatRooms" class="chatrooms">
-        <p>{{ room.name }}</p>
-    </div>
-    </section>
+    
 </section>
