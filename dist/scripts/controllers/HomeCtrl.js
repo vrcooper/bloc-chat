@@ -4,10 +4,16 @@
         
         this.openModal = function() {
             this.modalInstance = $uibModal.open({
-                template: "<h1>Hello world</h1>",
-//                templateUrl: '/templates/modal.html',
+//               template: "<h1>Hello world</h1>",
+               templateUrl: '/templates/modal.html',
                 controller: 'ModalCtrl'
                        });
+        }
+        
+        this.closeModal = function() {
+            this.modalInstance = $uibModal.close({
+                
+            });
         }
     }
     
