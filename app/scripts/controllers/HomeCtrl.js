@@ -15,6 +15,12 @@
                 
             });
         }
+        
+        this.submitModal = function() {
+            this.modalInstance = $uibModal.submit({
+                
+            });
+        }
     }
     
     angular
