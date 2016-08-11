@@ -9,20 +9,14 @@
                 controller: 'ModalCtrl'
                        });
         }
+       
+         modalInstance.result.then(function (selectedItems) {
+      this.selected = selectedItem;
+    }, function () {
+      $log.info('Modal dismissed at: ' + new Date());
+    });
         
-        this.closeModal = function() {
-            this.modalInstance = $uibModal.close({
-                
-            });
-        }
-        
-        this.submitModal = function() {
-            this.modalInstance = $uibModal.submit({
-                
-            });
-        }
     }
-    
     angular
         .module('blocChat')
         .controller('HomeCtrl',HomeCtrl);

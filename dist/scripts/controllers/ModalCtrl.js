@@ -1,8 +1,15 @@
 (function() {
-    function ModalCtrl($uibModal) {
+    function ModalCtrl($uibModalInstance) {
         
+            this.closeModal = function() {
+                $uibModalInstance.dismiss();
+                console.log("Call closeModal");
+            }
             
-        this.create = function(rooms) {
+            this.submitModal = function() {
+                $uibModalInstance.close(this.newRoom.name);
+            }
+       /* this.create = function(rooms) {
             return rooms.$add(room);
         },
             this.get = function (roomId) {
@@ -10,7 +17,7 @@
             },
                 this.delete = function (room) {
                     return rooms$remove(room);
-                }
+                }*/
     };
    
     
