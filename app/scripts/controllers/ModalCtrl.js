@@ -1,4 +1,5 @@
 (function() {
+
     function ModalCtrl($uibModalInstance, $scope, Room) {
         
           $scope.closeModal = function(){
@@ -10,6 +11,8 @@
               // Call your Modal.Create("room_name") method to create the new room.
 //              $uibModalInstance.create()
           }
+
+   
     };
     
     

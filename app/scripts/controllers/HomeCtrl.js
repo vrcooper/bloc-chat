@@ -17,9 +17,14 @@
 //                }
                        });
         }
+       
+         modalInstance.result.then(function (selectedItems) {
+      this.selected = selectedItem;
+    }, function () {
+      $log.info('Modal dismissed at: ' + new Date());
+    });
         
     }
-    
     angular
         .module('blocChat')
         .controller('HomeCtrl',HomeCtrl);
