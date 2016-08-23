@@ -9,7 +9,12 @@
           
           $scope.submitModal = function() {
               // Call your Modal.Create("room_name") method to create the new room.
-//              $uibModalInstance.create()
+              $scope.newRoom = {name: ''};
+              
+              $scope.create = function() {
+                   $uibModalInstance.close($scope.newRoom);
+              };
+           
           }
 
    
