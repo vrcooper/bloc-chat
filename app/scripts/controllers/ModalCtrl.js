@@ -1,6 +1,9 @@
 (function() {
 
     function ModalCtrl($uibModalInstance, $scope, Room) {
+        $scope.newRoom = {};
+        
+        $scope.newRoom.name = "Test Room 1";
         
           $scope.closeModal = function(){
               // alert('clicked the close button');
@@ -9,11 +12,10 @@
           
           $scope.submitModal = function() {
               // Call your Modal.Create("room_name") method to create the new room.
-              $scope.newRoom = {name: ''};
+             // $scope.newRoom = {name: ''};
               
-              $scope.create = function() {
-                   $uibModalInstance.close($scope.newRoom);
-              };
+              $uibModalInstance.close($scope.newRoom);
+              
            
           }
 

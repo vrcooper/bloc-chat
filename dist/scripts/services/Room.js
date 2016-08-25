@@ -9,7 +9,8 @@
         
         var rooms = {
             getRooms: getRooms,
-            addRoom: addRoom
+            addRoom: addRoom,
+            all: roomRef
         };
         
         return rooms;

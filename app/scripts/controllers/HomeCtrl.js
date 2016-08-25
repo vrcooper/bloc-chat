@@ -24,7 +24,7 @@
 //                }
                        });
             
-            modalInstance.result.then(function (selectedItem) {
+            Home.modalInstance.result.then(function (selectedItem) {
       this.selected = selectedItem;
                 Home.roomService.addRoom(selectedItem);
     }, function () {
