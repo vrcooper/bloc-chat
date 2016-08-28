@@ -7,6 +7,11 @@
         
         Home.roomService = Room;
         
+        Home.selectRoom = function(room) {
+            Home.selectedRoom = room;
+            Home.messages = Room.getMessages(this.selectedRoom.$id);
+        }
+        
         this.openModal = function() {
             // inside here, "this" refers to the "openModal" function, not the HomeCtrl
             Home.modalInstance = $uibModal.open({

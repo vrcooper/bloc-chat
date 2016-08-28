@@ -5,15 +5,20 @@
         <div class="new-chat-room">
             <button class="btn btn-primary" ng-click="home.openModal()"><strong>+ </strong>Create New Chat Room</button>
         </div>
-        <section class="rooms-list">
-    <div class="chatrooms">
-        <p ng-repeat="room in home.chatRooms">{{room.name}}</p>
-        </div>
+    <section class="rooms-list">
+    <div ng-repeat="room in home.chatRooms" class="chatrooms">
+        <a ng-click="home.selectRoom(room)">{{ room.name }}</a>   
+    </div>
+            
     </section>
     </div>
     </div>
 </section>
 
-<section>
-    
-</section>
+
+<div class="col-md-9 chatroom">
+<h3>{{ home.selectedRoom.name }}</h3>
+    <p ng-repeat="message in home.messages">
+    <strong>{{ message.username }}:</strong> {{ message.content}}
+    </p>
+</div>

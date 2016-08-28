@@ -10,6 +10,7 @@
         var rooms = {
             getRooms: getRooms,
             addRoom: addRoom,
+            getMessages: getMessages,
             all: roomRef
         };
         
@@ -25,6 +26,10 @@
         
         function addRoom(name) {
             roomRef.$add(name);
+        };
+        
+        function getMessages(roomId) {
+            return $firebaseArray(firebaseRef.child('messages').orderByChild('roomId').equalTo('-KQ44f7xeebgz9IyejXo'));
         };
        
         /* return {
