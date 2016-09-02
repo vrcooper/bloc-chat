@@ -30,7 +30,11 @@
 }
 
 .chatroom {
-    background-color: bisque;
+    background-color: #efefef;
     height: 1000px;
     float: right;
+}
+
+small {
+    color: #ccc;
 }

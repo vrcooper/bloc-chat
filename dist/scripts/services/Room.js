@@ -29,7 +29,7 @@
         };
         
         function getMessages(roomId) {
-            return $firebaseArray(firebaseRef.child('messages').orderByChild('roomId').equalTo('-KQ44f7xeebgz9IyejXo'));
+            return $firebaseArray(firebaseRef.child('messages').orderByChild('roomId').equalTo('-KQgy3scwYKdCTte2SVR'));
         };
        
         /* return {
